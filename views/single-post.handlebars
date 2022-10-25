@@ -1,16 +1,11 @@
-{{!-- import display single post partial --}}
-{{> post-info post}}
+{{!-- import single post partial--}}
+<div class="item">
+    {{> post-info post}}
+</div>
 
 {{#if loggedIn}}
-{{! Comment Form }}
-<form id="add-comment-form" >
-    <div>
-    <textarea name="comment-body"></textarea>
-    </div>
-    <div>
-    <button type="submit">add comment</button>
-    </div>
-</form>
+{{!-- comment form --}}
+{{> add-comment}}
 {{/if}}
 
 {{!-- import list of comments partial --}}
