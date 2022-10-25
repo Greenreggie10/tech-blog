@@ -1,19 +1,22 @@
 {{!-- edit post form --}}
-<article>
-  <h2>
-    Edit Post
-  </h2>
-  <form id="edit-post-form">
+<article class="item">
+  <div class="title form">
+    <h2>Edit Post</h2>
+  </div>
+  <form id="edit-post-form" class="content">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name="post-url" type="test" value="{{format_url post.post_url}}" />
+      <label for="post-title">Title</label>
+      <input name="post-title" type="text" value="{{post.title}}" class="text-box"/>
     </div>
-    <button type="submit" id="edit-post-btn">Save post</button>
-    <button type="button" id="delete-post-btn">Delete post</button>
+    <div>
+      <label for="post0-content">Content</label>
+      <textarea name="post-content" class="text-box post-content">{{post.post_content}}</textarea>
+    </div>
+      <button type="submit" id="edit-post-btn" class="btn">Update post</button>
+      <button type="button" id="delete-post-btn" class="btn long">Delete post</button>
   </form>
 </article>
 
 {{!-- js scripts --}}
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/add-comment.js"></script>
