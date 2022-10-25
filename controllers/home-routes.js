@@ -84,7 +84,6 @@ function getAllPosts(req, res) {
     attributes: [
         'id',
         'title',
-        'post_content',
         'created_at'
     ],
     include: [

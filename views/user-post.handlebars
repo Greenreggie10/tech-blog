@@ -1,0 +1,21 @@
+{{#if loggedIn}}
+{{!-- import display single post partial --}}
+<article class="item">
+{{> post-info post}}
+    <div class="right-btn">
+        <a href="/dashboard/edit/{{post.id}}">
+            <button>Edit post</button>
+        </a>
+        <button type="button" id="delete-post-btn">Delete post</button>
+    </div>
+</article>
+{{> add-comment}}
+
+{{!-- import list of comments partial --}}
+{{> post-comments post.comments}}
+
+{{!-- js scripts --}}
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/add-comment.js"></script>
+{{/if}}
