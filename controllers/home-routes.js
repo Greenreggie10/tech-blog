@@ -43,7 +43,7 @@ router.get('/sign-up', (req, res) => {
       },
       attributes: [
         'id',
-        'post_content',
+        'post_url',
         'title',
         'created_at',
       ],
@@ -84,6 +84,7 @@ function getAllPosts(req, res) {
     attributes: [
         'id',
         'title',
+        'post_url',
         'created_at'
     ],
     include: [
