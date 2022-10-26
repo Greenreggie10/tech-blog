@@ -11,7 +11,7 @@ challenge this week is to build a CMS-style blog site similar to a Wordpress sit
 
 ## !-- stillshot of site -->
 
-![alt text]()
+![alt text](./assets/Screenshot%20(techblog).png)
 
 
 ## !-- Installation --> 
@@ -24,11 +24,15 @@ See the application functioning
 ## !-- Tools Usage  -->        
 The app was built and developed using Visual Studio Code (VS Code).
 
+
 Sequelize was used to maintain and manipulate the database.
+
 
 Express.js was used to create a server and connect it to our database.
 
+
 Node.js was used to code the app/db logic.
+
 
 Heroku hosts the deployed website and utilizes JawsDB to host the remote server/database.
 
